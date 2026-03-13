@@ -48,7 +48,7 @@ npm run preview
 ## 项目结构
 
 ```
-tendering/
+tendering-analysis/
 ├── src/
 │   ├── src/              # 源代码
 │   │   ├── views/        # 页面组件
