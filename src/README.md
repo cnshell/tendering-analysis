@@ -56,7 +56,7 @@
 ### 1. 安装依赖
 
 ```bash
-cd /root/.openclaw/workspace/tendering/src
+cd /root/.openclaw/workspace/tendering-analysis/src
 npm install
 ```
 
@@ -66,7 +66,7 @@ npm install
 npm run dev
 ```
 
-访问：http://localhost:5173/tendering/
+访问：http://localhost:5173/tendering-analysis/
 
 ### 3. 生产构建
 
@@ -74,13 +74,13 @@ npm run dev
 npm run build
 ```
 
-构建输出：`/root/.openclaw/workspace/tendering/src/dist/`
+构建输出：`/root/.openclaw/workspace/tendering-analysis/src/dist/`
 
 ### 4. Nginx 配置
 
 ```bash
 # 复制配置文件
-sudo cp /root/.openclaw/workspace/tendering/nginx/tendering.conf /etc/nginx/conf.d/
+sudo cp /root/.openclaw/workspace/tendering-analysis/nginx/tendering.conf /etc/nginx/conf.d/
 
 # 测试配置
 sudo nginx -t
@@ -89,12 +89,12 @@ sudo nginx -t
 sudo nginx -s reload
 ```
 
-访问：http://127.0.0.1/tendering/
+访问：http://127.0.0.1/tendering-analysis/
 
 ## 目录结构
 
 ```
-tendering/
+tendering-analysis/
 ├── src/                    # 前端源代码
 │   ├── index.html
 │   ├── package.json
